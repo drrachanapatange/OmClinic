@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dr. Rachana - Om Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="About Dr. Rachana S Patange, B.H.M.S., PGDEMS. Best homeopathy doctor in Pune.">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Om<span>Clinic</span> ✿</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="about.html" class="active">About Doctor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section" style="margin-top: 40px;">
+        <div class="container">
+            <h2 class="section-title">About the Doctor</h2>
+            <div class="about-flex">
+                <div class="about-img-container" style="flex: 0.5;">
+                    <img src="DrRachana.jpg" alt="Dr. Rachana S Patange" style="border: 10px solid white; box-shadow: 0 10px 30px rgba(230, 168, 183, 0.4);">
+                </div>
+                <div class="about-text" style="flex: 1.5;">
+                    <h3 style="font-size: 2.2rem; margin-bottom: 5px;">DR. Rachana S Patange</h3>
+                    <h4 style="color: var(--secondary-color); font-size: 1.2rem; font-family: var(--body-font); font-weight: 500; margin-bottom: 25px;">B.H.M.S. , PGDEMS</h4>
+                    
+                    <div class="info-box" style="background-color: white; box-shadow: var(--shadow); border-left: none; border-top: 4px solid var(--primary-color);">
+                        <p><strong>DR. Rachana S Patange</strong> is one of the best homeopathy Doctors in Pune, practising since the year 2015. DR. Rachana graduated from Dhondumama Sathe Homeopathy Medical College, Pune. She has completed her PGDEMS course from Ruby Hall Clinic.</p>
+                        
+                        <p>DR. Rachana worked in Khopoli Municipal Hospital as a Medical Officer. She worked with DR. Sunil Dongre, one of the leading practitioners in Khopoli.</p>
+                        
+                        <p>She is a visiting Homeopathic consultant at DR. Dongre clinic Khopoli and Dyanand clinic, Phulgaon.</p>
+                        
+                        <p>Her field of expertise includes Paediatric cases, acute cases, female disorders, geriatric problems, psychiatric and emotional problems.</p>
+                        
+                        <p>She has a good hold on Flower Remedies, which is a safe and natural method of healing.</p>
+                    </div>
+                    
+                    <div class="contact-box" style="margin-top: 30px; background-color: var(--bg-color); padding: 25px; border-radius: 15px; border-left: 4px solid var(--secondary-color);">
+                        <h4 style="margin-bottom: 15px; color: var(--primary-dark); font-size: 1.4rem;">Clinic Locations & Contact</h4>
+                        <p style="margin-bottom: 10px;"><strong>📍 Pune Clinic:</strong> A 304 Palazzo Co. Hos Soc., Balewadi, Pune</p>
+                        <p style="margin-bottom: 10px;"><strong>📍 Khopoli Clinic:</strong> Dr. Dongares Clinic R.D. Nagar, Khopoli</p>
+                        <p style="margin-bottom: 0;"><strong>📞 Phone:</strong> <a href="tel:9011788037" style="color: var(--primary-dark); font-weight: 600;">9011788037</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="position: absolute; bottom: 0; width: 100%; margin-top: 0;">
+        <div class="container">
+            <p>&copy; 2026 Om Clinic - Dr. Rachana S Patange. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- A small script to fix footer to bottom if content is too short -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (document.body.scrollHeight <= window.innerHeight) {
+                document.querySelector('footer').style.position = 'absolute';
+                document.querySelector('footer').style.bottom = '0';
+                document.querySelector('footer').style.width = '100%';
+            } else {
+                document.querySelector('footer').style.position = 'static';
+            }
+        });
+    </script>
+</body>
+</html>
