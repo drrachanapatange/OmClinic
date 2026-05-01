@@ -266,6 +266,10 @@ nav {
     flex: 1;
 }
 
+.about-flex.reverse {
+    flex-direction: row-reverse;
+}
+
 /* Info Box */
 .info-box {
     background-color: rgba(230, 168, 183, 0.1);
@@ -293,13 +297,44 @@ footer p {
     nav {
         flex-direction: column;
         gap: 15px;
+        padding: 15px 0;
     }
 
     .nav-links {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: 5px;
+        gap: 20px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .nav-links::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .nav-links::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+        border-radius: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+        padding: 5px 10px;
+        background: rgba(230, 168, 183, 0.1);
+        border-radius: 20px;
+    }
+    
+    .nav-links li a::after {
+        display: none; /* remove underline effect on mobile pills */
+    }
+
+    .nav-links li a.active, .nav-links li a:hover {
+        background: var(--primary-color);
+        color: white;
     }
     
     .hero-content {
@@ -310,7 +345,7 @@ footer p {
         font-size: 2rem;
     }
     
-    .about-flex {
+    .about-flex, .about-flex.reverse {
         flex-direction: column !important;
         gap: 30px;
     }
