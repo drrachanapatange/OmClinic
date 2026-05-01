@@ -290,15 +290,66 @@ footer p {
 
 /* Responsive */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .nav-links {
-        display: none; /* Simple approach for mobile, normally would add a hamburger menu */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
     
+    .hero-content {
+        padding: 20px;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
     
     .about-flex {
-        flex-direction: column;
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .about-img-container,
+    .about-text {
+        flex: 1 !important;
+        width: 100%;
+    }
+
+    .about-img-container::before {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Small mobile fixes */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
     }
 }
